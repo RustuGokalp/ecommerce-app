@@ -29,16 +29,17 @@ const ProductCard = ({ product }) => {
                   height={25}
                   className="me-2"
                 />
-                <span className="text-sm">KARGO BEDAVA</span>
+                <span className="text-sm">FREE SHIPPING</span>
               </div>
             )}
           </div>
           <div className="card-body">
             <h2 className="card-title line-clamp-1">{product?.name} </h2>
-            <p className="line-clamp-4">{product?.description}</p>
+            <h2 className="text-sm text-gray-500">{product?.type}</h2>
+            <span className="line-clamp-4 mb-2">{product?.description}</span>
             <div className="card-actions flex justify-center justify-around items-end">
               <p>{product?.price}$</p>
-              <button className="btn btn-primary">Buy Now</button>
+              <button className="btn btn-primary">Add To Card</button>
             </div>
           </div>
         </div>

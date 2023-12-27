@@ -1,12 +1,17 @@
+"use client";
+
 import React from "react";
+import Link from "next/link";
 
 const Header = () => {
   return (
     <div>
       <div className="navbar bg-base-700 container py-4">
-        <div className="flex-1">
-          <a className="btn btn-ghost text-xl">daisyUI</a>
-        </div>
+        <Link href={`/`}>
+          <div className="flex-1">
+            <span className="btn btn-ghost text-xl">daisyUI</span>
+          </div>
+        </Link>
         <div className="flex-none relative">
           <form className="d-flex" role="search">
             <input
