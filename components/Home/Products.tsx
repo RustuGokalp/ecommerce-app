@@ -23,7 +23,7 @@ const Products = () => {
   
   return <div>
     <div>
-    <div className='flex flex-wrap item-center gap-5 px-10'>
+    <div className='flex flex-wrap item-center gap-5 px-10 container justify-center'>
     {allProducts?.map(
       product => (
         <ProductCard key={product.id} product={product}/>
