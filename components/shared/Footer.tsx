@@ -17,7 +17,12 @@ const Footer = () => {
             <a href="/about-us" className="link no-underline text-neutral-400">
               About us
             </a>
-            <a className="link no-underline text-neutral-400">Contact</a>
+            <a href="/faq" className="link no-underline text-neutral-400">
+              FAQ
+            </a>
+            <a href="/contact" className="link no-underline text-neutral-400">
+              Contact
+            </a>
           </nav>
           <nav>
             <header className="footer-title">Social</header>
