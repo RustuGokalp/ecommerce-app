@@ -1,5 +1,5 @@
 "use client"
-import {getAllProducts} from '../../../utils/api'
+import {getAllProducts} from '../../utils/api'
 import { useState , useEffect} from "react";
 import ProductCard from './ProductCard';
 
@@ -22,12 +22,15 @@ const Products = () => {
     }, [])
   
   return <div>
+    <div>
     <div className='flex flex-wrap item-center gap-5 px-10'>
     {allProducts?.map(
       product => (
         <ProductCard key={product.id} product={product}/>
       )
     )}
+    </div>
+
     </div>
   </div>;
 };

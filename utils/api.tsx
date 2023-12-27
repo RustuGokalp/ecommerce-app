@@ -14,7 +14,9 @@ export const getAllProducts = async (): Promise<Product[]> => {
 export const getAllCategories = async (): Promise<Product[]> => {
   return fetchData("http://localhost:3001/categories");
 }
-
+export const getProductDetail = async (id: number): Promise<Product[]> => {
+  return fetchData(`http://localhost:3001/products/${id}`);
+}
 const fetchData = async (url:string)=> {
   try{
     const response = await axios.get(url)
