@@ -7,15 +7,15 @@ const Footer = () => {
         <footer className="footer p-10 bg-base-300 text-base-content mt-5 flex justify-around px-5">
           <nav>
             <header className="footer-title">Services</header>
-            <a className="link link-hover">Branding</a>
-            <a className="link link-hover">Design</a>
-            <a className="link link-hover">Marketing</a>
-            <a className="link link-hover">Advertisement</a>
+            <a className="link no-underline text-neutral-400">Branding</a>
+            <a className="link no-underline text-neutral-400">Design</a>
+            <a className="link no-underline text-neutral-400">Marketing</a>
+            <a className="link no-underline text-neutral-400">Advertisement</a>
           </nav>
           <nav>
             <header className="footer-title">Company</header>
-            <a className="link link-hover">About us</a>
-            <a className="link link-hover">Contact</a>
+            <a className="link no-underline text-neutral-400">About us</a>
+            <a className="link no-underline text-neutral-400">Contact</a>
           </nav>
           <nav>
             <header className="footer-title">Social</header>
