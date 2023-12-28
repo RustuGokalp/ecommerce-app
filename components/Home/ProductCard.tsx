@@ -9,8 +9,12 @@ const ProductCard = ({ product }) => {
   };
 
   return (
-    <div onClick={clickFonk}>
-      <Link href={`products/${product.id}`} className="no-underline">
+    <div>
+      <Link
+        href={`products/${product.id}`}
+        className="no-underline"
+        onClick={clickFonk}
+      >
         <div className="card w-96 bg-base-100 shadow-xl relative">
           <div className="flex justify-center pt-3">
             <Image
