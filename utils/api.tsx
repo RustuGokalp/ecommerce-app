@@ -17,18 +17,21 @@ interface Category {
   name: string;
   slug: string;
 }
+
+export const BASE_URL = "http://localhost:3001";
+
 //env'e bağlanacak
 export const getAllProducts = async (): Promise<Product[]> => {
-  return fetchData("http://localhost:3001/products");
+  return fetchData(`${BASE_URL}/products`);
 };
 export const getProductDetail = async (id: number): Promise<Product[]> => {
-  return fetchData(`http://localhost:3001/products/${id}`);
+  return fetchData(`${BASE_URL}/products/${id}`);
 };
 export const getAllCategories = async (): Promise<Category[]> => {
-  return fetchData("http://localhost:3001/categories");
+  return fetchData(`${BASE_URL}/categories`);
 };
 export const getAllBrands = async (): Promise<Brand[]> => {
-  return fetchData(`http://localhost:3001/brands`);
+  return fetchData(`${BASE_URL}/brands`);
 };
 
 const fetchData = async (url: string) => {
